@@ -5,9 +5,8 @@ body{
     font-family: Lato, 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 18px;
     font-weight: 300;
-    background-image: url('../img/background.jpg');
+    background: url('../img/background.jpg') fixed;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 h1, h2, h3{
@@ -44,6 +43,7 @@ a:hover, a:focus{
 main{
     margin: 20px 20px 20px 30%;
     background-image: url('../img/ricepaper_v3.png');
+    opacity: 0.9;
 }
 
 header{
@@ -79,12 +79,9 @@ dd{
 
 #menu {
     padding: 1em;
-    background-color: rgb(207,205,105); /* TODO set opacity to 0.5 */
+    background-color: rgba(207,205,105,.5);
 }
 
 #about{
     padding: 1em;
 }
-
-/* TODO check up on opacity
-It appears on the site that the opacity of all the <main> background is 50% opacity */
