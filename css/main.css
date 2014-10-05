@@ -73,15 +73,15 @@ dd{
     margin: 0 0 1em 1em;
 }
 
-#general{
+.general{
     padding: 1em;
 }
 
-#menu {
+.menu {
     padding: 1em;
     background-color: rgba(207,205,105,.5);
 }
 
-#about{
+.about{
     padding: 1em;
 }
