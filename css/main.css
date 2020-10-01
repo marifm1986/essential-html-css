@@ -1,87 +1,108 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:300);
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400);
 
-body{
-    font-family: Lato, 'Helvetica Neue', Helvetica, sans-serif;
+:root {
+    --primary_color: #fa5a0f;
+    --secondary_color: #fa5a0f;
+}
+
+body {
+    font-family: Lato, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 18px;
     font-weight: 300;
-    background: url('../img/background.jpg') fixed;
+    background: url("../img/background.jpg") fixed;
     background-size: cover;
 }
 
-h1, h2, h3{
-    font-family: Raleway, 'Helvetica Neue', Helvetica, sans-serif;
-    font-weight: 300;
+h1,
+h2,
+h3 {
+    font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 500;
 }
 
-h1{
+h1 {
     font-size: 300%;
     margin: 0;
 }
 
-h2, h3{
-    color: #505050
+h2,
+h3 {
+    color: #505050;
 }
 
-h2{
+h2 {
     font-size: 150%;
 }
 
-h3{
+h3 {
     font-size: 125%;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
     text-decoration: none;
-    color: #0000AA;
+    color: #0000aa;
 }
 
-a:hover, a:focus{
-    color: #0000EE;
+a:hover,
+a:focus {
+    color: #0000ee;
 }
 
-main{
+main {
     margin: 20px 20px 20px 30%;
-    background-image: url('../img/ricepaper_v3.png');
+    background-image: url("../img/ricepaper_v3.png");
     opacity: 0.9;
 }
 
-header{
-    padding: 1em;
-    background-color: #FA5A0F;
-    border-bottom: solid 5px #EA4A00;
-    color: #FFFFFF;
+header {
+    padding: 1em 5em;
+    background: var(--primary_color);
+    border-bottom: solid 5px var(--primary_color);
+    color: #ffffff;
 }
 
-header p{
+header p {
     margin: 0;
     font-size: 120%;
-    color: #EEEEEE;
+    color: #eeeeee;
 }
 
-footer{
-    padding: 1em;
-    background-color: #FC892F;
-    border-top: solid 5px #EC791F;
+footer {
+    padding: 1em 3em;
+    background: var(--secondary_color);
+    border-top: solid 5px var(--secondary_color);
     font-size: 80%;
     text-align: right;
 }
 
-dd{
-    font-size: 80%;
+dd {
+    font-size: 1.1rem;
     font-style: italic;
     margin: 0 0 1em 1em;
 }
 
-.general{
-    padding: 1em;
+.general {
+    padding: 1em 3em;
 }
 
 .menu {
-    padding: 1em;
-    background-color: rgba(207,205,105,.5);
+    padding: 1em 3em;
+    background: rgba(207, 205, 105, 0.5);
+    display: flex;
+    justify-content: space-between;
 }
 
-.about{
-    padding: 1em;
+.main_title {
+    text-align: center;
+    margin: auto;
+}
+
+.about {
+    padding: 1em 3em;
+}
+
+.recipe_list {
+    max-width: 25em;
 }
